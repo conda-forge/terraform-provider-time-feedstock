@@ -1,6 +1,7 @@
+{% set provider = "Time" %}
   {% set provider = "Time" %}
 {% set goname = "github.com/hashicorp/terraform-provider-"+provider.lower() %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -12,7 +13,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: abe9017f2668c13113632467551d900be4541bb69307ddcc2c6312c1b4015a8b
+  sha256: 0374e307029f9014bc363952d63c99f98b931db70ce20b491442a35d2a2529c3
 
 build:
   number: 0
