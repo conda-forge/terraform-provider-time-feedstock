@@ -1,7 +1,7 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.11'
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 go_compiler:
@@ -18,3 +18,5 @@ target_goexe:
 - ''
 target_goos:
 - darwin
+target_platform:
+- osx-64
